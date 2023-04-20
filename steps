@@ -1,0 +1,13 @@
+sudo mkdir /etc/ansible
+
+sudo vim /etc/ansible/hosts
+
+add entry as mentioned below
+
+[agent]
+ip of the agent server
+
+save the file
+
+ansible all -m ping --private-key /home/ubuntu/.ssh/ansible
+
